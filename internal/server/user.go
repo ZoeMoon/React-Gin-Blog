@@ -1,8 +1,9 @@
 package server
 
 import (
-	"cat/internal/store"
 	"net/http"
+
+	"github.com/ZoeMoon/React-Gin-Blog/internal/store"
 
 	"github.com/gin-gonic/gin"
 )

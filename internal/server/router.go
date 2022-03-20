@@ -1,6 +1,8 @@
 package server
 
 import (
+	"net/http"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -11,9 +13,6 @@ func setRouter() *gin.Engine {
 	// Enables automatic redirection if the current route can't be matched but a
 	// handler for the path with (without) the trailing slash exists.
 	router.RedirectTrailingSlash = true
-
-	// Serve static files to frontend if server is started in production environment
-	router.Use(static.Serve("/", static.LocalFile("./assets/build", true)))
 
 	// Create API route group
 	api := router.Group("/api")

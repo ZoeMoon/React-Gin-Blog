@@ -1,7 +1,7 @@
 package main
 
 import (
-	"cat/internal/server"
+	"github.com/ZoeMoon/React-Gin-Blog/internal/server"
 )
 
 func main() {
